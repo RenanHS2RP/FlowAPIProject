@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from FlowAPIApp.serializers import FlowSerializer
+from FlowAPIApp.models import FlowSensor
 
-# Create your views here.
+class FlowView(viewsets.ModelViewSet):
+    queryset = FlowSensor.objects.all()
+    serializer_class = FlowSerializer
