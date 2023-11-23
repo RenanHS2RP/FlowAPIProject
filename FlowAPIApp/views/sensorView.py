@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from FlowAPIApp.serializers import FlowSerializer
-from FlowAPIApp.models import FlowSensor
+from FlowAPIApp.serializers.sensoSerializer import FlowSerializer
+from FlowAPIApp.models.sensorModel import FlowSensor
 
 class FlowView(viewsets.ModelViewSet):
     queryset = FlowSensor.objects.all()
