@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from FlowAPIApp.models import FlowSensor
+from FlowAPIApp.models.sensorModel import FlowSensor
 
 class FlowSerializer(serializers.ModelSerializer):
     class Meta:
