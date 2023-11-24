@@ -4,7 +4,7 @@ from rest_framework.exceptions import ValidationError
 from rest_framework import status
 from FlowAPIApp.serializers.pumpSerializer import PumpSerializer
 from FlowAPIApp.models.pumpModel import PumpFlow
-from FlowAPIApp.utils.ThingsBoard import  ThingsBoard
+from FlowAPIApp.utils.thingsBoard import  ThingsBoard
 
 class PumpView(viewsets.ModelViewSet):
     queryset = PumpFlow.objects.all()

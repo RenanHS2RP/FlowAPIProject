@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from FlowAPIApp.serializers.sensorSerializer import FlowSerializer
 from FlowAPIApp.models.sensorModel import FlowSensor
-from FlowAPIApp.utils.ThingsBoard import  ThingsBoard
+from FlowAPIApp.utils.thingsBoard import  ThingsBoard
 
 
 
