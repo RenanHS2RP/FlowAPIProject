@@ -14,4 +14,3 @@ class ThingsBoard:
             return JsonResponse({"message": "Sucess"})
         except Exception as e:
             return e
-        
